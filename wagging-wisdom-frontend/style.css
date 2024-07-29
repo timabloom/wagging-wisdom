@@ -32,6 +32,7 @@
 
 .card {
   max-width: 600px;
+  font-size: 1.2rem;
   padding: 1.2em;
   background-color: #fff;
   border-radius: 50px 50px 0 0;
@@ -55,11 +56,6 @@
 }
 
 .card__button {
-  margin-bottom: 1em;
-  background-color: #fff;
-}
-
-.card__button {
   background-color: #ffc862;
   border-radius: 10px;
   border: none;
@@ -75,17 +71,8 @@
 }
 
 @media (width >= 768px) {
-  .card__quote,
-  .card__quote-author {
-    font-size: 1.5em;
-  }
-
-  .card__quote-author {
-    margin-bottom: 2em;
-  }
-
-  .card__button {
-    font-size: 1.5em;
+  .card {
+    font-size: 1.5rem;
   }
 }
 
