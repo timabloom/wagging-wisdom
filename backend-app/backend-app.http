@@ -1,6 +1,6 @@
 @backend_app_HostAddress = http://localhost:5204
 
-GET {{backend_app_HostAddress}}/weatherforecast/
+GET {{backend_app_HostAddress}}/quote/
 Accept: application/json
 
 ###
