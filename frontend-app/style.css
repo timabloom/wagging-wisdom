@@ -12,17 +12,21 @@
 
 .header__heading {
   color: #4b3b06;
-  font-size: 2em;
+  font-size: clamp(2em, 10vw, 10em);
 }
 
 .header__subheading {
   color: #4b3b06;
-  font-size: 1.5em;
+  font-size: clamp(1.5em, 5vw, 4em);
   margin-top: 0;
 }
 
-.main {
-  margin: 0;
+.header__heading {
+  margin-bottom: 0.3em;
+}
+
+.header__subheading {
+  margin-top: 0;
 }
 
 .card {
@@ -51,7 +55,7 @@
 
 .card__button {
   margin-bottom: 1em;
-  background-color: white;
+  background-color: #fff;
 }
 
 .card__button {
@@ -70,15 +74,6 @@
 }
 
 @media (width >= 768px) {
-  .header__heading {
-    color: #4b3b06;
-    font-size: 6em;
-  }
-
-  .header__subheading {
-    font-size: 3em;
-  }
-
   .card__quote,
   .card__quote-author {
     font-size: 1.5em;
@@ -93,13 +88,4 @@
   }
 }
 @media (width >= 1536px) {
-  .header__heading {
-    font-size: 10em;
-    margin-bottom: 0.3em;
-  }
-
-  .header__subheading {
-    margin-top: 0;
-    font-size: 4em;
-  }
 }
