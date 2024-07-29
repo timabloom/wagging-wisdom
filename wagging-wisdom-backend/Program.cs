@@ -34,7 +34,7 @@ app.MapGet("/quote", () =>
 {
     Random random = new Random();
     int number = random.Next(1, 16);
-    var wiseDogs = new string[]
+    var wiseDogQuotes = new string[]
         {
             "“The best things in life are simple: a warm sunbeam, a loyal friend, and a good belly rub.”",
             "“In every wag of my tail lies the secret to happiness: live in the moment and cherish those you love.”",
@@ -53,7 +53,7 @@ app.MapGet("/quote", () =>
             "“Life is short, so fill it with joy, run freely, and never underestimate the power of a good scratch behind the ears.”",
             "“When life gets ruff, remember that a little playtime can turn any day around.”"
         };
-    return Results.Json(wiseDogs[number]);
+    return Results.Json(wiseDogQuotes[number]);
 });
 
 app.Run();
