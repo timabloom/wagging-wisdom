@@ -1,0 +1,6 @@
+@wagging_wisdom_backend_HostAddress = http://localhost:5204
+
+GET {{wagging_wisdom_backend_HostAddress}}/quote/
+Accept: application/json
+
+###

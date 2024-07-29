@@ -11,13 +11,14 @@
 }
 
 .header__heading {
+  margin-top: 0.3em;
   color: #4b3b06;
-  font-size: clamp(2em, 10vw, 10em);
+  font-size: clamp(2rem, 11.5vw, 8rem);
 }
 
 .header__subheading {
   color: #4b3b06;
-  font-size: clamp(1.5em, 5vw, 4em);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   margin-top: 0;
 }
 
@@ -87,5 +88,6 @@
     font-size: 1.5em;
   }
 }
+
 @media (width >= 1536px) {
 }
