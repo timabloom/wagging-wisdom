@@ -5,12 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="card">
-      <p class="card__quote"></p>
+
+  <body class="body">
+    <header class="header">
+      <h1 class="header__heading">Wagging Wisdom</h1>
+      <p class="header__subheading">A quote per day takes your worries away</p>
+    </header>
+    <main class="main">
+      <div class="card">
+        <img
+          class="card__image"
+          src="https://petdt.com/wp-content/uploads/2021/06/Why-Do-Dogs-Like-to-Lay-in-The-Sun-Sunbathe.jpg.webp"
+          alt="a dog lying on it's back enjoying the sun"
+        />
+        <p class="card__quote"></p>
+      </div>
       <button class="card__button">Get quote</button>
-    </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
